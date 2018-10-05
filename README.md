@@ -1,0 +1,2 @@
+# destructornew
+garbage collection example 
