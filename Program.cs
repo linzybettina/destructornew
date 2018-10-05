@@ -1,0 +1,39 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+
+namespace Tutlane
+{
+    class User
+    {
+       public User()
+        {
+            Console.WriteLine("An Instance of class created");
+         }
+        ~User()
+        {
+            Console.WriteLine("An Instance of class destroyed");
+         }
+         }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+             Details();
+
+          GC.Collect();
+
+            Console.ReadLine();
+               }
+
+        public static void Details()
+        {
+            // Created instance of class
+            User user = new User();
+         }
+
+    }
+
+}
